@@ -35,6 +35,8 @@ pl:
               blank: jest puste
             password_confirmation:
               confirmation: zostało źle uzupełnione
+            confirmation_token:
+              invalid: jest nieprawidłowy
     models:
       user:
         few: Użytkowników
@@ -95,7 +97,7 @@ pl:
         confirm_new_password: Powtórz nowe hasło
         new_password: Nowe hasło
       new:
-        forgot_your_password: Zapomniałeś swojego hasła?
+        forgot_your_password: Nie pamiętasz swojego hasła?
         send_me_reset_password_instructions: Wyślij instrukcje zmiany hasła
       no_token: Do tej strony możesz dostać się tylko poprzez wiadomość e-mail resetującą hasło. Jeśli to z niej tu trafiłeś, upewnij się, że użyłeś pełnego adresu.
       send_instructions: Instrukcja zmiany hasła zostanie niezwłocznie wysłana na podany adres e-mail.
@@ -105,7 +107,7 @@ pl:
     registrations:
       destroyed: Twoje konto zostało usunięte.
       edit:
-        are_you_sure: Jesteś pewny?
+        are_you_sure: Czy na pewno chcesz usunąć konto?
         cancel_my_account: Anuluj moje konto
         currently_waiting_confirmation_for_email: 'Aktualnie oczekujemy na potwierdzenie z: %{email}'
         leave_blank_if_you_don_t_want_to_change_it: pozostaw puste, jeśli nie chcesz wprowadzać zmian
@@ -126,6 +128,7 @@ pl:
       already_signed_out: Wylogowano pomyślnie.
       new:
         sign_in: Zaloguj się
+      destroy: Wyloguj
       signed_in: Zalogowano pomyślnie.
       signed_out: Wylogowano pomyślnie.
     shared:
