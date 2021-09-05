@@ -9,7 +9,9 @@ Bundler.require(*Rails.groups)
 module Rails2
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
-    config.load_defaults 6.1
+		config.load_defaults 6.1
+		
+		Dir[Rails.root.join('lib', 'middleware', '*.{rb}')].each { |file| require file }
 
     # Configuration for the application, engines, and railties goes here.
     #
@@ -22,6 +24,8 @@ module Rails2
     # Allow framing to see output in Repl.it
     config.action_dispatch.default_headers = {
       'X-Frame-Options' => ''
-    }
+		}
+		
+    config.middleware.use Middleware::LocaleMiddleware
   end
 end

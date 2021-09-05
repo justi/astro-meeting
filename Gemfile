@@ -31,6 +31,8 @@ gem 'leaflet-rails'
 
 # User authentication
 gem 'devise'
+gem 'devise-i18n'
+gem 'devise-bootstrap-views', '~> 1.1'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
