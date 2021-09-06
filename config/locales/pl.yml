@@ -1,0 +1,3 @@
+pl:
+  date:
+    order: [ !ruby/symbol day, !ruby/symbol month, !ruby/symbol year ]
